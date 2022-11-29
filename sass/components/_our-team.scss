@@ -1,0 +1,107 @@
+.our-team {
+  padding-top: 94px;
+  padding-bottom: 82px;
+  background-color: #f5f4fa;
+}
+
+.our-team__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+.our-team__list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  gap: 30px;
+  justify-content: center;
+}
+.our-team__item {
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.our-team__paragraph-worker {
+  color: #757575;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.17;
+  display: flex;
+  justify-content: center;
+}
+.our-team__img-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.17;
+  display: flex;
+  justify-content: center;
+}
+.our-team__socialmedia {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+  padding-top: 16px;
+  gap: 10px;
+}
+
+.our-team__socialmedia a {
+  height: 44px;
+  width: 44px;
+  display: flex;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  padding: 12px 12px;
+  fill: #afb1b8;
+
+  &:hover,
+  &:focus {
+    height: 44px;
+    width: 44px;
+    display: flex;
+    text-align: center;
+    background: #2196f3;
+    border-radius: 50%;
+    padding: 12px 12px;
+    fill: #ffffff;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+//0-768px
+@media screen and (max-width: 767px) {
+  .our-team__image {
+    width: 100%;
+    height: auto;
+  }
+  .our-team__item {
+    flex-basis: calc((100% - 30px) / 1);
+  }
+}
+
+// 768px - 1199px
+@media screen and (min-width: 768px) {
+  .our-team__image {
+    width: 100%;
+    height: auto;
+  }
+  .our-team__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+
+// 1200px -
+@media screen and (min-width: 1200px) {
+  .our-team__image {
+    width: 100%;
+    height: auto;
+  }
+  .our-team__item {
+    flex-basis: calc((100% - 30px) / 5);
+  }
+}

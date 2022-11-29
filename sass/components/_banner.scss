@@ -1,0 +1,153 @@
+.main-banner__background {
+  background-color: #2f303a;
+  color: #ffffff;
+  padding-bottom: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background-image: linear-gradient(
+      rgba(47, 48, 54, 0.4),
+      rgba(47, 48, 54, 0.4)
+    ),
+    url(../images/teamimage.jpg);
+  background-size: cover;
+  max-width: 1600px;
+  background-position: center;
+}
+.main-banner__button {
+  display: flex;
+  padding-top: 30px;
+}
+.main-banner__btn {
+  background-color: #f5f4fa;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  color: #212121;
+  height: 50px;
+  width: 200px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  &:hover,
+  &:focus {
+    background-color: #2196f3;
+    color: #ffffff;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.main-banner__title {
+  max-width: 365px;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06cm;
+  text-transform: uppercase;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding-top: 118px;
+}
+//0-768px
+
+@media screen and (max-width: 767px) {
+  .main-banner__title {
+    max-width: 480px;
+    font-size: 26px;
+    line-height: 1.61;
+  }
+  .main-banner__background {
+    max-width: 480px;
+    object-fit: cover;
+
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/teamimage__mobile.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .main-banner__background {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/teamimage__mobile@2.jpg);
+  }
+}
+// 768px - 1199px
+
+@media screen and (min-width: 768px) {
+  .main-banner__title {
+    max-width: 365px;
+    font-size: 26px;
+    line-height: 1.61;
+    padding-top: 118px;
+  }
+  .main-banner__background {
+    max-width: 768px;
+    object-fit: cover;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/teamimage__tablet.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .main-banner__background {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/teamimage__tablet@2.jpg);
+    }
+  }
+}
+// 1200px -
+
+@media screen and (min-width: 1200px) {
+  .main-banner__title {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+    padding-top: 200px;
+  }
+  .main-banner__background {
+    max-width: 1600px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/teamimage.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .main-banner__background {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/teamimage@2.jpg);
+    }
+  }
+}
